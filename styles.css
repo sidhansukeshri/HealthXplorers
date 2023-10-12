@@ -1,0 +1,183 @@
+/* Reset some default styles for a clean slate */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Apply a stylish background color */
+body {
+    background-color: #f1f1f1; /* Light gray background */
+    font-family: Arial, sans-serif;
+}
+
+/* Header styling */
+header {
+    background-color: #333; /* Dark gray background for the header */
+    color: #fff; /* White text color */
+    text-align: center;
+    padding: 20px 0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img {
+    max-width: 100px; /* Adjust the size of your logo */
+    margin-right: 10px;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Pacifico', cursive; /* Use a fun and funky font for headings */
+    text-align: center; /* Center-align all headings */
+    padding-bottom: 7px;
+}
+
+h3 {
+    font-size: 44px;
+    color: #faf9f9;
+}
+
+h4 {
+    font-size: 24px;
+    color: #faf9f9;
+}
+
+/* Main section styling */
+main {
+    padding: 20px;
+}
+
+/* Hero section styling */
+.hero {
+    background-color: #ff6f61; /* Funky orange background */
+    padding: 40px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.hero h1 {
+    font-size: 36px;
+}
+
+.hero:hover {
+    transform: translateY(3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Mission section styling */
+.mission {
+    background-color: #fff; /* White background */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow effect */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.mission-text p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.mission-images {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.mission-images img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.mission:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 8px rgba(0, 0, 0, 0.2);
+
+}
+
+/* Actions section styling */
+.actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    margin-bottom: 40px; /* Add margin to the bottom of the whole section */
+}
+
+.container {
+    flex: 1;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.container:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Style the "Check Your Skin" container */
+#check-skin-container {
+    margin-right: 20px; /* Add margin to the right for spacing between containers */
+}
+
+h2 {
+    font-size: 24px;
+    color: #000000;
+}
+
+/* Style the button container */
+.button-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Style the buttons within the container */
+button {
+    flex: 1;
+    background-color: #ff6f61; /* Funky orange button color */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    margin: 10px;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Recommendations section styling */
+#recommendations {
+    font-size: 18px;
+    color: #333;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #333;
+    color: #fff;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .actions {
+        flex-direction: column; /* Stack containers vertically on smaller screens */
+    }
+
+    .container {
+        margin-right: 0; /* Remove margin between containers in smaller screens */
+        margin-bottom: 20px; /* Add margin to the bottom of each container in smaller screens */
+    }
+}
